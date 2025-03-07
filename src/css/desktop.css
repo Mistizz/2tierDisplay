@@ -1,0 +1,58 @@
+.plugin-space-heading {
+  font-size: 1.5em;
+  margin: 0.8em 0;
+}
+.plugin-space-message {
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 0.8em 0;
+  margin-top: 0;
+}
+
+/* 2段表示のスタイル */
+.two-tier-upper-cell {
+  position: relative;
+  padding-bottom: 2.5em !important;
+}
+
+.two-tier-lower-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 4px 8px;
+  font-size: 0.85em;
+  color: #666;
+  background-color: #f9f9f9;
+  border-top: 1px dashed #ddd;
+  box-sizing: border-box;
+  max-height: 2.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 下段セルのスタイル */
+.two-tier-lower-cell {
+  width: 100% !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  max-width: 100% !important;
+}
+
+.two-tier-lower-cell > div {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 8px !important;
+  max-width: 100% !important;
+}
+
+/* 編集モード時のスタイル */
+.recordlist-edit-row-gaia .two-tier-upper-cell {
+  padding-bottom: 0 !important;
+}

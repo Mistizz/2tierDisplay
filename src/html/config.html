@@ -1,0 +1,71 @@
+<section class="settings">
+  <h2 class="settings-heading">2段表示プラグイン設定</h2>
+  <p class="kintoneplugin-desc">レコード一覧画面で、フィールドを2段で表示するための設定を行います。</p>
+  <form class="js-submit-settings">
+    <div class="kintoneplugin-row">
+      <div class="kintoneplugin-label">一覧選択</div>
+      <div class="kintoneplugin-select-outer">
+        <div class="kintoneplugin-select">
+          <select id="js-select-list-view" class="js-select-list-view" aria-label="一覧選択">
+            <option value="">選択してください</option>
+          </select>
+        </div>
+        <div class="kintoneplugin-row-save">
+          <button type="button" id="js-save-view" class="kintoneplugin-button-dialog-ok">この一覧の設定を保存</button>
+          <span id="js-save-view-message" class="save-message"></span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="kintoneplugin-row">
+      <div class="kintoneplugin-label">フィールドマッピング</div>
+      <div class="kintoneplugin-input-outer">
+        <button type="button" id="js-add-mapping" class="kintoneplugin-button-dialog-ok">マッピングを追加</button>
+        <table class="kintoneplugin-table" id="js-mapping-table">
+          <thead>
+            <tr>
+              <th>上段フィールド</th>
+              <th>下段フィールド</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody id="js-mapping-tbody">
+            <!-- マッピング行がここに追加されます -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    <div class="kintoneplugin-row">
+      <button type="button" class="js-cancel-button kintoneplugin-button-dialog-cancel">キャンセル</button>
+      <button class="kintoneplugin-button-dialog-ok">すべて保存</button>
+    </div>
+  </form>
+</section>
+
+<!-- マッピング行のテンプレート -->
+<template id="js-mapping-row-template">
+  <tr class="js-mapping-row">
+    <td>
+      <div class="kintoneplugin-select-outer">
+        <div class="kintoneplugin-select">
+          <select class="js-upper-field" aria-label="上段フィールド">
+            <option value="">選択してください</option>
+          </select>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="kintoneplugin-select-outer">
+        <div class="kintoneplugin-select">
+          <select class="js-lower-field" aria-label="下段フィールド">
+            <option value="">選択してください</option>
+          </select>
+        </div>
+      </div>
+    </td>
+    <td>
+      <button type="button" class="js-delete-mapping kintoneplugin-button-normal-danger">削除</button>
+    </td>
+  </tr>
+</template>

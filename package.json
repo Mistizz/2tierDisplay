@@ -1,0 +1,15 @@
+{
+  "name": "2tierDisplay",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "kintone-plugin-packer --ppk private.ppk --out dist/2tierDisplay.zip src",
+    "develop": "npm run build -- --watch",
+    "lint": "eslint src",
+    "start": "npm run develop"
+  },
+  "devDependencies": {
+    "@cybozu/eslint-config": "^23.0.0",
+    "@kintone/plugin-packer": "^8.1.3",
+    "eslint": "^8.57.0"
+  }
+}

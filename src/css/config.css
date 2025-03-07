@@ -1,0 +1,115 @@
+.settings-heading {
+  padding: 1em 0;
+}
+
+.kintoneplugin-input-text {
+  width: 20em;
+}
+
+/* マッピングを追加ボタンのスタイル調整 */
+#js-add-mapping {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  background-color: #3498db;
+  color: #ffffff;
+  font-size: 0.85em;
+  padding: 0px 10px;
+  border: none;
+  min-width: auto;
+}
+
+#js-add-mapping:hover {
+  background-color: #2980b9;
+}
+
+/* 削除ボタンのスタイル調整 */
+.kintoneplugin-button-normal-danger {
+  background-color: #e74c3c;
+  color: #ffffff;
+  font-size: 0.85em;
+  margin: auto;
+  padding: 3px 5px;
+  display: block;
+  vertical-align: middle;
+}
+
+.kintoneplugin-button-normal-danger:hover {
+  background-color: #c0392b;
+}
+
+/* 操作列の垂直位置調整 */
+.js-mapping-row td:last-child {
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* 一覧ごとの保存ボタンとメッセージのスタイル */
+.kintoneplugin-row-save {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#js-save-view {
+  background-color: #4b9e5f;
+  color: #ffffff;
+  font-size: 0.85em;
+  padding: 0px 10px;
+  border: none;
+  min-width: auto;
+}
+
+#js-save-view:hover {
+  background-color: #3a7d4a;
+}
+
+.save-message {
+  margin-left: 10px;
+  color: #4b9e5f;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.save-message.show {
+  opacity: 1;
+}
+
+/* フィールドマッピングテーブルのセル境界線を非表示にする */
+#js-mapping-table td {
+  border: none;
+  padding: 8px;  /* セル内の余白を追加 */
+}
+
+#js-mapping-table th {
+  border-bottom: 1px solid #e3e7e8; /* ヘッダー下の線のみ残す */
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  padding: 8px;  /* セル内の余白を追加 */
+}
+
+/* フィールドマッピングのドロップダウンの幅を固定 */
+.js-upper-field,
+.js-lower-field {
+  width: 300px !important;  /* 固定幅を設定 */
+  max-width: 300px !important;  /* 最大幅も設定 */
+  min-width: 300px !important;  /* 最小幅も設定 */
+}
+
+/* フィールドマッピングテーブルのレイアウト調整 */
+#js-mapping-table {
+  width: auto;  /* テーブル幅を内容に合わせる */
+  margin: 0 auto;  /* 中央寄せ */
+}
+
+/* フィールドマッピングの行のスタイル */
+.js-mapping-row {
+  height: 50px;  /* 行の高さを固定 */
+}
+
+/* 操作列（削除ボタン）の幅を固定 */
+.js-mapping-row td:last-child {
+  width: 80px;  /* 操作列の幅を固定 */
+  text-align: center;
+}
