@@ -7,18 +7,9 @@ requirements.yml
 node_modules/
 
 # ビルド成果物
-# GitHub経由で配布する場合、以下の2つの選択肢があります：
-# 選択肢1: ビルド成果物を除外する（推奨）
-#   - GitHubのリリース機能を使用してZIPファイルを配布
 dist/
 build/
 *.zip
-
-# 選択肢2: ビルド成果物を含める
-#   - 以下の行をコメントアウトすると、distフォルダとZIPファイルがリポジトリに含まれます
-# dist/
-# build/
-# *.zip
 
 # 依存関係
 # package-lock.json は管理対象とします
