@@ -34,7 +34,9 @@ kintoneでは通常、1つのフィールドには1つの情報しか格納で�
 
 ### インストール方法
 
-1. プラグインパッケージ（`2tierDisplay.zip`）をダウンロードします
+#### GitHubリリースからダウンロード
+
+1. [GitHubリリースページ](https://github.com/Mistizz/2tierDisplay/releases/tag/v1.0.0)から最新版の`2tierDisplay.zip`をダウンロードします
 2. kintoneシステム管理画面から「プラグイン」を選択します
 3. 「読み込む」から、ダウンロードしたZIPファイルをアップロードします
 4. アップロードしたプラグインを「アプリの設定」＞「設定」タブ＞「プラグイン」から有効化します
@@ -120,6 +122,12 @@ kintoneでは通常、1つのフィールドには1つの情報しか格納で�
 
 - kintone: 最新版推奨
 - ブラウザ: Google Chrome、Microsoft Edge の最新版
+
+## リリース情報
+
+最新バージョン: [v1.0.0](https://github.com/Mistizz/2tierDisplay/releases/tag/v1.0.0) (2025年3月7日リリース)
+
+詳細なリリースノートは[こちら](https://github.com/Mistizz/2tierDisplay/releases)でご確認いただけます。
 
 ## ライセンス
 
