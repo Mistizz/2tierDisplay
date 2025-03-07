@@ -6,7 +6,13 @@ prompts.yml
 requirements.yml
 node_modules/
 
+# ビルド成果物
+dist/
+build/
+*.zip
+
 # 依存関係
+# package-lock.json は管理対象とします
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -17,6 +23,7 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+config.js
 
 # エディタ設定
 .vscode/
